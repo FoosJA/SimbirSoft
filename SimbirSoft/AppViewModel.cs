@@ -25,7 +25,6 @@ namespace SimbirSoft
 			get { return _words; }
 			set { _words = value; RaisePropertyChanged(); }
 		}
-
 		
 		public ICommand StartCommand { get { return new RelayCommand(StartExecute, CanStart); } }
 		bool CanStart() { return true; }
